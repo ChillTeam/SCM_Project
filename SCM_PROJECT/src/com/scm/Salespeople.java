@@ -10,7 +10,7 @@ public class Salespeople {
 			this.salary=salary;
 			this.circulation=circulation;
 		}
-		public String getName() {
+		public String getName()  {
 			return name;
 		}
 		public void setName(String name) {
