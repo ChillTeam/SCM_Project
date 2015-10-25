@@ -4,7 +4,7 @@ public class Salespeople {
 		String name ="";
 		double salary=0;
 		double circulation=0;
-		double wage=0;
+		double wage;
 		public Salespeople(String name,double salary,double circulation){
 			this.name=name;
 			this.salary=salary;
@@ -30,14 +30,14 @@ public class Salespeople {
 		}
 		public double wages() {
 		
-			if(circulation>0 ||circulation <= 25000 ){
-				wage = circulation*1.01;
+			if(circulation>0 && circulation <= 25000 ){
+				this.wage = circulation*1.01;
 				
-			}else if(circulation>25000 ||circulation <= 50000 ){
-				wage = circulation*1.02;
+			}else if(circulation>25000 &&circulation <= 50000 ){
+				this.wage = circulation*1.02;
 				
 			}else if(circulation>50000 ){
-				wage = circulation*1.03;
+				this.wage = circulation*1.03;
 				
 			}
 			
