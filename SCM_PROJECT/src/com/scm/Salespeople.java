@@ -40,6 +40,9 @@ public class Salespeople {
 				this.wage = circulation*1.03;
 				
 			}
+			if(this.wage < 18000){
+				this.wage = 18000;
+			}
 			
 			
 			return wage;
