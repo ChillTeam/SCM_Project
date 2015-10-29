@@ -15,7 +15,7 @@ public class ProgramInputOutput {
 		System.out.print("Input circulation : ");
 		circulation = input.nextDouble();
 		Salespeople emp = new Salespeople(name, salary, circulation) ;
-		System.out.println("Name  : "+emp.getName());
+		System.out.println("Name  : "+emp.getName()+"     ");
 		System.out.println("Salary : "+emp.getSalary());
 		System.out.println("Circulation  : "+emp.getCirculation()+"   ");
 		System.out.println("Wage : "+emp.wages());
