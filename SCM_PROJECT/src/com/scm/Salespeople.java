@@ -30,16 +30,20 @@ public class Salespeople {
 		}
 		public double wages() {
 		
-			if(circulation>0 && circulation <= 50000 ){
+			if(circulation>0 && circulation <= 25000 ){
 				this.wage = circulation*1.01;
 				
-			}else if(circulation>50000 &&circulation <= 10000 ){
+			}else if(circulation>25000 &&circulation <= 50000 ){
 				this.wage = circulation*1.02;
 				
-			}else if(circulation>10000 ){
+			}else if(circulation>50000 ){
 				this.wage = circulation*1.03;
 				
 			}
+			if(this.wage < 18000){
+				this.wage = 18000;
+			}
+			
 			
 			return wage;
 		}
